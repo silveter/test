@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>User Login/</title>
+        <title>Order Details</title>
         <link rel="stylesheet" href="orderdetails.css">
     
         </head>
         <body>
           <?php
-		  include('menu.php');
+		  include('student_menu.php');
 		  ?>
 
             <div id="main-div">

@@ -8,10 +8,13 @@ $conn = mysqli_connect('localhost', 'root', '', 'musembi');
 $username = "";
 $email    = "";
 $errors   = array(); 
-
+$order_status = "";
 // call the register() function if register_btn is clicked
 if (isset($_POST['register_btn'])) {
 	register();
+}
+if (isset($_POST['pick_btn'])) {
+	AssignOrder();
 }
 // REGISTER USER
 function register(){
@@ -156,15 +159,6 @@ function login(){
 		}else {
 			array_push($errors, "Wrong username/password combination");
 		}
-	}
-}
-function isAdmin()
-{
-	if (isset($_SESSION['user']) && $_SESSION['user']['user_type'] == 'admin' ) {
-		//return true;
-		header('location: student_menu.php');
-	}else{
-		return false;
 	}
 }
 

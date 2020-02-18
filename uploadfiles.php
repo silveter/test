@@ -5,12 +5,7 @@
 <title>DMS- File Management/</title>
 <link rel="stylesheet" href="dms.css">
 <?php 
-//include('connection.php');
-include('menu.php');
-//include('scripts/refresh.php');
-//session_start();
-
-
+include 'admin_menu.php';
 ?>
 
 </head>

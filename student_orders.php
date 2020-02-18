@@ -24,9 +24,9 @@
            
 <?php
 include 'functions.php';
-include 'admin_menu.php';
+include 'student_menu.php';
 $orderid = '';
-$sql = "select topic,orderid from orderdetails where order_status=''";
+$sql = "select topic,orderid from orderdetails";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) >0) 
@@ -42,7 +42,7 @@ while ($row = mysqli_fetch_assoc($result))
 	
 	. "<td>".$row["topic"]."</td>";
 	
-echo '<td><a href="pickorder.php?id=' . $row["orderid"].'">' . $row["orderid"].'</a></td>';
+echo '<td><a href="studentview_order.php?id=' . $row["orderid"].'">' . $row["orderid"].'</a></td>';
 "</tr>";
     }
     

@@ -31,14 +31,10 @@
 
             <div id="black-div">
                 <hr class="new1">
-                |<a href="Home.php">Home</a>|
+                |<a href="expert_menu.php">Home</a>|
 				
                 <a href="tag_a.asp">Services</a>|
-				<a href="displayorder.php">Available Orders</a>|
-				
-                
-				<a href="orderdetails.php">Order Details</a>|
-                
+				<a href="displayorder.php">Available Orders</a>|				                
                 <a href="confirmed.php">In Progress</a>|
 				 <a href="confirmed.php">Revisions</a>|
 				<a href="displayorder.php">Completed</a>|

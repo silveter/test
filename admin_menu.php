@@ -19,31 +19,31 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        			
+                         <a href="login.php?logout='1'" style="color: black;">Change Password</a>				
 						<a href="login.php?logout='1'" style="color: black;">Log Out</a>
                     </div>
                 </div> 
-
-
-
             </div>
 
             <div id="black-div">
                 <hr class="new1">
-                |<a href="Home.php">Home</a>|				
+                |<a href="admin_menu.php">Home</a>|				
                 <a href="displayorder.php">Student Requests</a>|
-                <a href="test.php">Orders Confirmed</a>|              
+                <a href="confirmed.php">Orders Confirmed
+				
+				<font color='green'>
+				<?php echo mysqli_num_rows($conn->query("SELECT d.orderid,d.topic,o.price from orderdetails d, orders o WHERE d.order_status='Y'"));?>
+				</font>
+				</a>|              
 				<a href="tag_a.asp">Submitted Answers</a>|
 				<a href="tag_a.asp">Revisions</a>|
 				<a href="uploadfiles.php">Upload Samples</a>|
-                <a href="myfiles.php">Students</a>|
+                <a href="#">Students</a>|
 				<a href="displayorder.php">Experts</a>|
 
-            </div>
+            </div>  
+      
 
-
-            
-
-        </body>
-    </html>
+</body>
+</html>
 
